@@ -17,7 +17,7 @@ LINE_2 = (
     "and walk away."
 )
 
-TEXT = LINE_1 + "\n" + LINE_2 + "\n"
+TEXT = "\n".join((LINE_1, LINE_2)) + "\n"  # two lines, trailing newline
 
 
 def main() -> None:
